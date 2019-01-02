@@ -1,7 +1,6 @@
 import time
 import pandas as pd
 import numpy as np
-import os
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -247,26 +246,26 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
-        ts_question = input('\nWould you like to see time stats info? Enter yes or no\n')
-        if ts_question != 'yes':
+        time_stats_question = input('\nWould you like to see time stats info? Enter yes or no\n')
+        if time_stats_question != 'yes':
             pass
         else:
             time_stats(df)
 
-        ss_question = input('\nWould you like to see station stats info? Enter yes or no\n')
-        if ss_question != 'yes':
+        station_stats_question = input('\nWould you like to see station stats info? Enter yes or no\n')
+        if station_stats_question != 'yes':
             pass
         else:
             station_stats(df)
 
-        tds_question = input('\nWould you like to see trip duration stats info? Enter yes or no\n')
-        if tds_question != 'yes':
+        trip_duration_stats_question = input('\nWould you like to see trip duration stats info? Enter yes or no\n')
+        if trip_duration_stats_question != 'yes':
             pass
         else:
             trip_duration_stats(df)
 
-        us_question = input('\nWould you like to see user stats stats info? Enter yes or no\n')
-        if us_question != 'yes':
+        user_stats_question = input('\nWould you like to see user stats stats info? Enter yes or no\n')
+        if user_stats_question != 'yes':
             pass
         else:
             user_stats(df)
@@ -278,8 +277,8 @@ def main():
             print(df.head(5))
             while True:
                 df = df[5: ]
-                next_q = input('\nWould you like to see another five lines?\n')
-                if next_q.lower() != 'yes':
+                next_question = input('\nWould you like to see another five lines?\n')
+                if next_question.lower() != 'yes':
                     break
                 else:
                     print(df.head(5))
