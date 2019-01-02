@@ -28,7 +28,7 @@ def get_filters():
             print('That is not a valid input, please try again')
             continue
 
-    # get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june - only the first six months of the year)
     months = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 
     while True:
