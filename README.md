@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+Date Created - 7th December 2018
 
 ### Project Title
-Replace the Project Title
+Exploring US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+The project was about creating a program that would analyse data based on user input. The example data used was bikeshare data from three US cities- New York City, Washington and Chicago.
 
 ### Files used
-Include the files used
+chicago.csv
+washington.csv
+new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity Nanodegree program
